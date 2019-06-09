@@ -4,5 +4,16 @@ main: regularlymessage\Main
 version: 2.2.0
 description: Send your messages regularly
 author: bboyyu51
+authors: [PJZ9n]
 website: https://github.com/bboyyu51
 load: POSTWORLD
+
+permissions:
+  ReguarlyMessage:
+    default: true
+    children:
+      ReguarlyMessage.Settings:
+        default: true
+        children:
+          ReguarlyMessage.Settings.Change:
+            default: op
